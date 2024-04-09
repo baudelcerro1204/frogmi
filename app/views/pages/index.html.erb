@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Features List</title>
+  <link rel="stylesheet" type="text/css" href="/assets/text.css"> <!-- Enlace al archivo CSS -->
+</head>
+<body>
+  <header id="header">
+    <h1>Features List</h1>
+    <select id="magTypeFilter">
+      <option value="">All Magnitudes</option>
+      <option value="md">Md</option>
+      <option value="ml">Ml</option>
+      <option value="ms">Ms</option>
+      <option value="mw">Mw</option>
+      <option value="me">Me</option>
+      <option value="mi">Mi</option>
+      <option value="mb">Mb</option>
+      <option value="mlg">Mlg</option>
+    </select>
+  </header>
+
+  <div class="grid" id="features-list">
+    <!-- Aquí se insertarán las características dinámicamente -->
+  </div>
+
+  <!-- Elementos para mostrar datos de paginación -->
+  <div id="pagination" class="pagination" style="display: none;">
+    <div id="current_page"></div>
+    <div id="per_page"></div>
+  </div>
+  
+  <!-- Botones de paginación en el footer -->
+  <footer id="footer">
+    <button id="prevPage">Previous Page</button>
+    <div id="current_page"></div>
+    <button id="nextPage">Next Page</button>
+  </footer>
+
+  <!-- Script de jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Script personalizado -->
+  <script src="/assets/script.js"></script>
+</body>
+</html>
